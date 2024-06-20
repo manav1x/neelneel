@@ -16,7 +16,7 @@ body, html {
     top: 0; /* Align the header to the top of the page */
     left: 0;
     z-index: 10; /* Ensure the header is above other content */
-    color: white;
+    color: black;
 }
 
 .logo-container {
@@ -51,14 +51,31 @@ body, html {
 
 .nav-links a {
     text-decoration: none;
-    color: white; /* Adjust color as needed */
+    color: black; /* Adjust color as needed */
     font-size: 18px; /* Adjust font size as needed */
     font-weight: bold;
+    position: relative;
     transition: color 0.3s ease;
 }
 
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
 .nav-links a:hover {
-    color: yellow; /* Change color on hover */
+    color: white; /* Change color on hover */
 }
 
 .background-container {
@@ -88,6 +105,19 @@ body, html {
     font-weight: bold;
     color: black; /* Change the color to black */
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Add shadow for better readability */
+    animation: loading 3s infinite; /* Add loading animation */
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .overlay-slogan {
