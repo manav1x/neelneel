@@ -176,7 +176,8 @@ body, html {
 
 .service-image {
     width: 100%;
-    height: auto;
+    height: 150px; /* Fixed height to ensure uniformity */
+    object-fit: cover; /* Ensure the image covers the entire area */
     border-radius: 10px;
     margin-bottom: 10px;
 }
