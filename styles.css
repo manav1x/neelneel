@@ -217,3 +217,12 @@ body, html {
     list-style: none;
     padding: 0;
 }
+
+.booking-area {
+    background-color: transparent; /* Make the background transparent */
+    padding: 0; /* Remove padding */
+    border: none; /* Remove border */
+    width: auto; /* Ensure it doesn't stretch */
+    text-align: center;
+    margin-top: 0; /* Remove margin-top */
+}
