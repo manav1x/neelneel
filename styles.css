@@ -1,21 +1,23 @@
+/* General Styles */
 body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'DejaVu Sans', sans-serif; /* Change the font for the entire page */
+    font-family: 'DejaVu Sans', sans-serif; /* Relaxed font */
 }
 
+/* Header Styles */
 .site-header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Adjusts the space between the logo and the nav */
+    justify-content: space-between; /* Space between logo and nav */
     padding: 20px;
-    background-color: transparent; /* Make the header background transparent */
-    position: absolute; /* Position the header at the top */
-    width: 100%; /* Make the header full width */
-    top: 0; /* Align the header to the top of the page */
+    background-color: transparent; /* Transparent header background */
+    position: absolute; /* Position at the top */
+    width: 100%; /* Full width */
+    top: 0;
     left: 0;
-    z-index: 10; /* Ensure the header is above other content */
+    z-index: 10; /* Above other content */
     color: black;
 }
 
@@ -26,16 +28,16 @@ body, html {
 }
 
 .logo {
-    width: 150px; /* Adjust the size as necessary */
+    width: 150px; /* Logo size */
     height: auto;
     padding: 10px;
-    background-color: transparent; /* Ensure background is transparent */
+    background-color: transparent; /* Transparent background */
 }
 
 .main-nav {
     flex: 2;
     display: flex;
-    justify-content: center; /* Center the nav links */
+    justify-content: center; /* Center nav links */
 }
 
 .nav-links {
@@ -51,8 +53,8 @@ body, html {
 
 .nav-links a {
     text-decoration: none;
-    color: black; /* Adjust color as needed */
-    font-size: 18px; /* Adjust font size as needed */
+    color: black; /* Link color */
+    font-size: 18px; /* Link font size */
     font-weight: bold;
     position: relative;
     transition: color 0.3s ease;
@@ -75,16 +77,17 @@ body, html {
 }
 
 .nav-links a:hover {
-    color: white; /* Change color on hover */
+    color: white; /* Hover color */
 }
 
+/* Background Container Styles */
 .background-container {
     width: 100%;
     height: 100vh; /* Full viewport height */
-    background-image: url('images/pexels-lynxexotics-3802510.jpg'); /* Update with the path to your image */
-    background-size: cover; /* Ensures the image covers the entire container */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-image: url('images/pexels-lynxexotics-3802510.jpg'); /* Background image */
+    background-size: cover; /* Cover entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* No repeat */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,33 +104,28 @@ body, html {
 }
 
 .overlay-text {
-    font-size: 48px; /* Adjust the font size */
+    font-size: 48px; /* Heading size */
     font-weight: bold;
-    color: black; /* Change the color to black */
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Add shadow for better readability */
-    animation: loading 3s infinite; /* Add loading animation */
+    color: black; /* Heading color */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Text shadow */
+    animation: loading 3s infinite; /* Loading animation */
 }
 
 @keyframes loading {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 .overlay-slogan {
-    font-size: 24px; /* Adjust the font size */
+    font-size: 24px; /* Slogan size */
     font-weight: bold;
-    color: black; /* Change the color to black */
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Add shadow for better readability */
-    margin-top: 10px; /* Space between the title and slogan */
+    color: black; /* Slogan color */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Text shadow */
+    margin-top: 10px; /* Space between title and slogan */
 }
 
+/* Content Container Styles */
 .content-container {
     width: 100%;
     padding: 50px 20px;
@@ -136,7 +134,6 @@ body, html {
     text-align: center;
 }
 
-/* Optional: different background color for each content container */
 .content-container:nth-of-type(2) {
     background-color: #e0e0e0;
 }
@@ -145,6 +142,7 @@ body, html {
     background-color: #d0d0d0;
 }
 
+/* Service Level Styles */
 .service-levels {
     display: flex;
     justify-content: space-around;
@@ -176,8 +174,8 @@ body, html {
 
 .service-image {
     width: 100%;
-    height: 150px; /* Fixed height to ensure uniformity */
-    object-fit: cover; /* Ensure the image covers the entire area */
+    height: 150px; /* Fixed height for uniformity */
+    object-fit: cover; /* Cover entire area */
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -187,6 +185,7 @@ body, html {
     font-weight: bold;
 }
 
+/* About and Contact Styles */
 .about-contact {
     display: flex;
     justify-content: space-around;
@@ -222,22 +221,22 @@ body, html {
 
 .contact-card ul li {
     color: black;
-    font-size: 16px; /* Adjust font size */
+    font-size: 16px; /* Font size */
     display: flex;
     align-items: center;
-    margin: 0 10px; /* Adjust margin for horizontal alignment */
+    margin: 0 10px; /* Horizontal alignment */
 }
 
 .contact-card ul li i {
     margin-right: 10px;
-    font-size: 24px; /* Adjust icon size */
+    font-size: 24px; /* Icon size */
 }
 
 .booking-area {
-    background-color: transparent; /* Make the background transparent */
+    background-color: transparent; /* Transparent background */
     padding: 0; /* Remove padding */
     border: none; /* Remove border */
-    width: auto; /* Ensure it doesn't stretch */
+    width: auto; /* Auto width */
     text-align: center;
     margin-top: 0; /* Remove margin-top */
 }
@@ -263,50 +262,110 @@ body, html {
 
 .socials a {
     color: black;
-    font-size: 24px; /* Adjust font size for icons */
+    font-size: 24px; /* Font size for icons */
     margin: 0 10px;
     transition: color 0.3s ease;
 }
 
 .socials a:hover {
-    color: #555; /* Change color on hover */
+    color: #555; /* Hover color */
 }
 
-.about-us-page {
-    padding: 100px 20px 50px 20px; /* Add padding to the top to avoid overlap with logo */
+/* Services Page Styles */
+.services-page {
+    padding: 100px 20px 50px 20px; /* Padding to avoid overlap with logo */
     background-color: #ffffff; /* White background */
     color: black; /* Black text */
     text-align: left;
-    font-family: 'DejaVu Sans', sans-serif; /* Change the font for the About Us page */
 }
 
-.about-us-page h2 {
-    font-size: 32px; /* Adjust heading size */
-    margin-bottom: 20px;
-    animation: fadeInLeft 1.2s ease-in-out; /* Add fade-in animation */
+.service-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
-.about-us-page section {
-    margin-bottom: 40px; /* Increase space between sections */
+.service-info {
+    flex: 1;
+    padding-right: 20px;
 }
 
-.about-us-page p, .about-us-page ul {
-    margin-left: 40px; /* Add margin to the left for better readability */
-    line-height: 1.6; /* Improve readability */
-    animation: fadeInLeft 1.5s ease-in-out; /* Add fade-in animation */
+.service-info h2 {
+    font-size: 24px; /* Heading size */
+    margin-bottom: 10px;
+    font-weight: normal;
 }
 
-.about-us-page ul {
+.service-info p, .service-info ul {
+    margin-left: 20px; /* Left margin for readability */
+    line-height: 1.6; /* Line height for readability */
+}
+
+.service-info ul {
     list-style-type: disc;
 }
 
-@keyframes fadeInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-20px);
+.service-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.service-image img {
+    width: 100%;
+    max-width: 400px; /* Ensure image doesn't stretch */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* About Page Styles */
+.about-container {
+    padding: 100px 20px 50px 20px; /* Padding to avoid overlap with logo */
+    background-color: #ffffff; /* White background */
+    color: black; /* Black text */
+    text-align: left;
+    max-width: 1200px; /* Maximum width */
+    margin: 0 auto; /* Center align */
+}
+
+.about-container h1 {
+    text-align: center; /* Center align */
+    font-size: 36px; /* Title size */
+    margin-bottom: 30px; /* Space below title */
+}
+
+.about-container h2 {
+    font-size: 24px; /* Subtitle size */
+    margin-bottom: 20px; /* Space below subtitle */
+}
+
+.about-container p, .about-container ul {
+    margin-left: 20px; /* Left margin for readability */
+    line-height: 1.6; /* Line height for readability */
+}
+
+.about-container ul {
+    list-style-type: disc;
+}
+
+@media (max-width: 768px) {
+    .service-section {
+        flex-direction: column;
+        text-align: center;
     }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
+
+    .service-info {
+        padding-right: 0;
+    }
+
+    .service-image {
+        margin-top: 20px;
     }
 }
