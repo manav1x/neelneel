@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'DejaVu Sans', sans-serif; /* Change the font for the entire page */
 }
 
 .site-header {
@@ -157,9 +157,9 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #d9e8f5;
+    background-color: #ffffff; /* White background */
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000; /* Black border */
     border-radius: 10px;
     width: 200px;
     text-align: center;
@@ -194,9 +194,9 @@ body, html {
 }
 
 .about-card, .contact-card {
-    background-color: #d9e8f5;
+    background-color: #ffffff; /* White background */
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000; /* Black border */
     border-radius: 10px;
     width: 45%;
     text-align: center;
@@ -216,6 +216,21 @@ body, html {
 .contact-card ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-card ul li {
+    color: black;
+    font-size: 16px; /* Adjust font size */
+    display: flex;
+    align-items: center;
+    margin: 0 10px; /* Adjust margin for horizontal alignment */
+}
+
+.contact-card ul li i {
+    margin-right: 10px;
+    font-size: 24px; /* Adjust icon size */
 }
 
 .booking-area {
@@ -225,4 +240,73 @@ body, html {
     width: auto; /* Ensure it doesn't stretch */
     text-align: center;
     margin-top: 0; /* Remove margin-top */
+}
+
+.read-more {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #333;
+}
+
+.socials a {
+    color: black;
+    font-size: 24px; /* Adjust font size for icons */
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: #555; /* Change color on hover */
+}
+
+.about-us-page {
+    padding: 100px 20px 50px 20px; /* Add padding to the top to avoid overlap with logo */
+    background-color: #ffffff; /* White background */
+    color: black; /* Black text */
+    text-align: left;
+    font-family: 'DejaVu Sans', sans-serif; /* Change the font for the About Us page */
+}
+
+.about-us-page h2 {
+    font-size: 32px; /* Adjust heading size */
+    margin-bottom: 20px;
+    animation: fadeInLeft 1.2s ease-in-out; /* Add fade-in animation */
+}
+
+.about-us-page section {
+    margin-bottom: 40px; /* Increase space between sections */
+}
+
+.about-us-page p, .about-us-page ul {
+    margin-left: 40px; /* Add margin to the left for better readability */
+    line-height: 1.6; /* Improve readability */
+    animation: fadeInLeft 1.5s ease-in-out; /* Add fade-in animation */
+}
+
+.about-us-page ul {
+    list-style-type: disc;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
